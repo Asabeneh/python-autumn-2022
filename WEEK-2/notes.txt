@@ -1,0 +1,16 @@
+- Builting Functions
+    - print(), len(), sum(), max(), min(), input(), round(), abs(),dir(),str(), int(), range(), type()
+- Data Types
+    - Numbers(Int, float, Complex)
+    - Booleans(True and False)
+    - Strings
+    - List
+    - Set
+    - Tupes
+    - Dictionary
+- Operators
+    - Assignment Operators
+    - Arithmetic Operators
+    - Comparison Operators
+    - Logical Operators
+- Strings
