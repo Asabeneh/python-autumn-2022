@@ -1,5 +1,5 @@
 Tuples
 Sets
 Dictionaries
-Loop
+Loops
 Functions
