@@ -1,0 +1,4 @@
+strings
+- Revise strings
+- We learn list
+- conditionals
