@@ -1,0 +1,4 @@
+Functional Programming(map, filter, reduce)
+Python Errors
+Exception Handling
+Python date time

@@ -1,0 +1,56 @@
+import json
+import pandas as pd
+
+with open('strava_simplified.json') as project_file:    
+    data = json.load(project_file)
+
+
+print(type(data[0]['start_date_local'])) # this is a string!
+print(type(data[0]['distance'])) # this is a float!
+
+
+df = pd.json_normalize(data)
+print(df)
+df['distance2'] = [ w for w in df['distance'] / 1000]
+# df['start_week'] = [ w for w in df['start_date_local'] str(datetime.datetime.strptime(w, '%Y-%m-%dT%H:%M:%SZ').date()]
+print(df[['start_date_local', 'distance', 'distance2']])
+# print(df[['start_date_local', 'distance', 'distance2', 'start_week']])
+
+
+
+# total_dist = sum(lst)
+# print(total_dist)
+# df['start_date_local']= pd.to_datetime(df[:1]['start_date_local']).date()
+# print(pd.to_datetime(df['start_date_local']).date())
+# foo = df['start_date_local']
+# print(foo)
+# df.info()
+
+# for d in data:
+    # df = pd.DataFrame(data[d])
+# print(data[0]['start_date_local'])
+# df = pd.DataFrame(data[0]['start_date_local'])
+# df = pd.DataFrame(data[d])
+
+# df_print = df[['start_date_local', 'distance']]
+# print(df_print)
+
+# dt_lst= [element.to_pydatetime() for element in df['start_date_local']]
+# print(dt_lst)
+# for element in df['start_date_local']:
+#     print(element.to_pydatetime())
+
+
+# print(d.date())
+# print(df.type.value_counts())
+
+# print(df.groupby('type')\
+#     [['distance']]\
+#     .describe()\
+#     .T)
+
+
+
+# pprint(df.distance)
+# pprint(sum(df.distance))
+
