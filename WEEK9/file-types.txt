@@ -1,0 +1,6 @@
+Let us talk about file types
+The most common is .txt
+JSON used for HTTP communication
+.xml
+.csv
+.tsv

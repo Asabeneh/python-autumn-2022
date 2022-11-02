@@ -1,0 +1,3 @@
+I love Python. Python is a very user friendly programming langauges. If you have a plan to purse a career in IT industry, I think it would be good to start from Python.
+This is the second line
+This is the third line
